@@ -60,6 +60,8 @@
       "name": "CrossBrowserTesting.com for Selenium Builder",
       "description": "Enables export and playback on CrossBrowserTesting.com.",
       "siteUrl": "http://crossbrowsertesting.com/faq/how-do-i-record-and-run-selenium-tests-selenium-builder",
+      "screenshot": "http://crossbrowsertesting.com/sebuilder_screenshot.png",
+      "icon": "http://crossbrowsertesting.com/cbt-48x48.png",
       "browsers": {
         "firefox": {
           "pluginVersion": "1.5",
