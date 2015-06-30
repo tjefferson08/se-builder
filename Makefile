@@ -18,7 +18,8 @@ help:
 xpi:
 	@echo "Building latest '${XPI_PATH}':\n"
 	@mkdir -p ${BUILD_PATH}
-	@sed -i "s#\(em:version>\)[^<>]*\(</em:version\)#\1${BUILDER_VERSION}\2#" ${RDF_PATH}
+	@sed -i.bak "s#\(em:version>\)[^<>]*\(</em:version\)#\1${BUILDER_VERSION}\2#" ${RDF_PATH}
+	@rm -f ${RDF_PATH}.bak
 	@cd ${PROJECT} && zip -r ../${BUILD_PATH}/${XPI_NAME} .
 	@echo "File generated at: ${PWD}/${BUILD_PATH}/${XPI_NAME}"
 
